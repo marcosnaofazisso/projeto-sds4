@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
 import { BASE_URL } from 'utils/requests';
 import { SaleSum } from 'types/sale';
@@ -27,16 +27,6 @@ const DonutChart = () => {
 
     }, []);
 
-
-    //FORMA ERRADA
-    // let chartData : ChartData = {labels: [], series: []};
-
-
-    //FORMA ERRADA
-    // const mockData = {
-    //     series: [477138, 499928, 444867, 220426, 473088],
-    //     labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-    // }
 
     const options = {
         legend: {
